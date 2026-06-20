@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/my-landing/static/css/main.bb03bc01.css",
+    "main.js": "/my-landing/static/js/main.6ff197ac.js",
+    "static/media/mesto.png": "/my-landing/static/media/mesto.2e910f90b94185c4cdf7.png",
+    "static/media/SkillSwap.png": "/my-landing/static/media/SkillSwap.fb3eca5a6d809a9e1b32.png",
+    "static/media/about.avif": "/my-landing/static/media/about.3849e6dbb939f9f7f7a5.avif",
+    "index.html": "/my-landing/index.html",
+    "main.bb03bc01.css.map": "/my-landing/static/css/main.bb03bc01.css.map",
+    "main.6ff197ac.js.map": "/my-landing/static/js/main.6ff197ac.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb03bc01.css",
+    "static/js/main.6ff197ac.js"
+  ]
+}
