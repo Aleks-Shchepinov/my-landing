@@ -1,0 +1,183 @@
+.sectionStackContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px;
+    padding: 90px 0;
+    /* align-items: center; */
+}
+
+.sectionStackTitle {
+    padding-left: 16px;
+    font-size: 52px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.sectionStackSubtitle {
+    margin-bottom: 3rem;
+    color: rgb(156, 163, 175);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 36rem;
+    align-self: center;
+    text-align: center;
+}
+
+.sectionStackCard {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid rgb(229, 231, 235, 0.1);
+    border-radius: 16px;
+    backdrop-filter: blur(12px);
+    background-color: rgba(11, 15, 25, 0.7);
+    transition: border-color 0.3s ease,
+    box-shadow 0.3s ease;
+    max-width: 390px;
+    height: 475px;
+}
+
+.sectionStackCard:hover {
+    border-color: rgba(6, 182, 212, 0.3);
+    box-shadow: 0 10px 30px -10px rgba(6, 182, 212, 0.15);
+}
+
+.sectionStackCardContainer {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sectionStackCardTitle {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    justify-content: center;
+}
+
+.sectionStackCardIcon {
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+.blue {
+    color: rgb(34, 211, 238);
+    filter: drop-shadow(rgba(6, 182, 212, 0.35) 0px 0px 6px);
+}
+
+.blueViolet {
+    color: rgb(129, 140, 248);
+    filter: drop-shadow(rgba(99, 102, 241, 0.35) 0px 0px 6px);
+}
+
+.violet {
+    color: rgb(192, 132, 252);
+    filter: drop-shadow(rgba(168, 85, 247, 0.35) 0px 0px 6px);
+}
+
+.sectionStackTitleText {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.sectionStackCardInfoSubtitle {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgb(209, 213, 219);
+    margin-bottom: 5px;
+}
+
+.sectionStackCardInfoText {
+    color: rgb(107, 114, 128);
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.sectionStackCardInfoItemContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.sectionStackCardInfoItem {
+  border: 1px solid rgb(255, 255, 255, 0.08);
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.03);
+  color: rgb(209, 213, 219);
+  padding: 6px 12px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  cursor: default;
+}
+
+.sectionStackCardInfoItem:hover {
+  color: #06b6d4;
+  background-color: rgba(6, 182, 212, 0.1);
+  border-color: #06b6d4;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(6, 182, 212, 0.15);
+}
+
+.customHr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    margin: 1rem 0;
+}
+
+@media (max-width: 1024px) {
+    .sectionStackContainer {
+        margin: 0 1.5rem;
+        padding: 2rem 0;
+    }
+
+    .sectionStackCardContainer {
+        flex-wrap: wrap;
+    }
+
+    .sectionStackCard {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1rem;
+        max-width: auto;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .sectionStackContainer {
+        margin: 0 1.5rem;
+        padding: 2rem 0;
+    }
+
+    .sectionStackCardContainer {
+        flex-direction: column;
+    }
+
+    .sectionStackCard {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1rem;
+        max-width: fit-content;
+        height: fit-content;
+    }
+}

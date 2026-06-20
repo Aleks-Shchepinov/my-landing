@@ -1,0 +1,426 @@
+.sectionPortfolioContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px;
+    padding: 90px 0;
+    background-color: rgba(3, 7, 18);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    transition: border 0.3s ease;
+}
+
+.sectionPortfolioContainer:hover {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.sectionPortfolioWrap {
+    padding: 0 1.5rem;
+    width: 100%;
+}
+
+.sectionPortfolioTitle {
+    padding-left: 16px;
+    font-size: 52px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.sectionPortfolioTitleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionPortfolioSubtitle {
+    margin-bottom: 3rem;
+    color: rgb(156, 163, 175);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 36rem;
+    align-self: center;
+    text-align: center;
+}
+
+.sectionPortfolioСasesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sectionPortfolioСasesWrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionPortfolioPetTitleWrap {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding-bottom: 12px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sectionPortfolioDot {
+  background-color: rgb(34, 211, 238);
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+}
+
+.sectionPortfolioPetTitle {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+.sectionPortfolioCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.sectionPortfolioCard {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid rgb(229, 231, 235, 0.1);
+    border-radius: 16px;
+    backdrop-filter: blur(12px);
+    background-color: rgba(11, 15, 25, 0.7);
+    transition: border-color 0.3s ease,
+    box-shadow 0.3s ease;
+    flex: 1;
+}
+
+.sectionPortfolioCard:hover {
+    border-color: rgba(6, 182, 212, 0.3);
+    box-shadow: 0 10px 30px -10px rgba(6, 182, 212, 0.15);
+}
+
+.sectionPortfolioCardInfoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sectionPortfolioCardInfoWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sectionPortfolioCardInfoTitle {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    color: rgb(255, 255, 255);
+}
+
+.sectionPortfolioCardInfoText {
+    font-size: 14px;
+    line-height: 22px;
+    color: rgb(156, 163, 175);
+}
+
+.sectionPortfolioCardInfoTechnologies {
+    font-family: "JetBrains Mono", monospace;
+    color: rgb(107, 114, 128);
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.sectionPortfolioCardInfoResultWrap {
+    background-color: rgba(6, 182, 212, 0.05);
+    border: 1px solid rgba(6, 182, 212, 0.1);
+    border-radius: 8px;
+    line-height: 24px;
+    padding: 12px;
+    color: rgb(34, 211, 238);
+}
+
+.sectionPortfolioCardInfoResultGreen {
+    color: rgb(52, 211, 153);
+}
+
+.sectionPortfolioCardInfoResult {
+    font-size: 12px;
+    line-height: 19.5px;
+}
+
+.sectionPortfolioCardInfoLink {
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.sectionPortfolioCardInfoLink:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.imageContainer {
+  position: relative;
+  z-index: 2;
+  min-width: 50%;
+  min-height: 50%;
+  border-radius: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  background-color: rgba(11, 15, 25, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.imageContainer:hover img {
+  transform: scale(1.05);
+}
+
+.imageCommercStub {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0f172a 0%, #020617 100%);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.imageCommercStubText {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(156, 163, 175);
+    font-family: "JetBrains Mono", monospace;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+}
+
+.sectionPortfolioCardBadgeNda {
+    padding: 2px 8px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    line-height: 15px;
+    font-family: "JetBrains Mono", monospace;
+    width: fit-content;
+}
+
+.sectionPortfolioCompetenciesContainer {
+    padding: 90px 0;
+    margin: 0 40px;
+}
+
+.sectionPortfolioCompetenciesWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 0 auto;
+}
+
+.sectionPortfolioCompetenciesTitle {
+    border-left: 4px solid rgb(99, 102, 241);
+    padding-left: 16px;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 32px;
+    margin-left: 30px;
+}
+
+.sectionPortfolioCompetenciesCardContainer {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sectionPortfolioCompetenciesCard {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+}
+
+.sectionPortfolioCompetenciesCardIcon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(34, 211, 238);
+    background-color: rgba(6, 182, 212, 0.1);
+    border: 1px solid rgba(6, 182, 212, 0.2);
+    filter: drop-shadow(rgba(6, 182, 212, 0.35) 0px 0px 6px);
+    border-radius: 8px;
+}
+
+.sectionPortfolioCompetenciesCardIconColorBlue {
+    color: rgb(34, 211, 238);
+    background-color: rgba(6, 182, 212, 0.1);
+    border: 1px solid rgba(6, 182, 212, 0.2);
+    filter: drop-shadow(rgba(6, 182, 212, 0.35) 0px 0px 6px);
+}
+
+.sectionPortfolioCompetenciesCardIconColorViolet {
+    color: rgb(129, 140, 248);
+    background-color: rgba(99, 102, 241, 0.1);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    filter: drop-shadow(rgba(99, 102, 241, 0.35) 0px 0px 6px);
+}
+
+.sectionPortfolioCompetenciesCardIconColorPink {
+    color: rgb(192, 132, 252);
+    background-color: rgba(168, 85, 247, 0.1);
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    filter: drop-shadow(rgba(168, 85, 247, 0.35) 0px 0px 6px);
+}
+
+.sectionPortfolioCompetenciesCardTitle {
+    color: rgb(255, 255, 255);
+}
+
+.sectionPortfolioCompetenciesCardSubtitle {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgb(156, 163, 175);
+}
+
+@media (max-width: 1908px) {
+    .sectionPortfolioCard {
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .sectionPortfolioCompetenciesWrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        padding: 0 1rem;
+    }
+
+    .sectionPortfolioCompetenciesCard {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        flex: 1;
+    }
+
+    .sectionPortfolioCompetenciesCardContainer {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        gap: 1.5rem;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .sectionPortfolioContainer {
+        margin: 0 1rem;
+        padding: 1rem 0;
+    }
+
+    .sectionPortfolioCompetenciesContainer {
+        padding: 1.5rem 0;
+        margin: 0 2rem;
+    }
+
+    .sectionPortfolioCard {
+        gap: 1rem;
+        padding: 1rem;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .sectionPortfolioCardContainer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sectionPortfolioContainer {
+        margin: 0 1rem;
+        padding: 1rem 0;
+    }
+
+    .sectionPortfolioTitle {
+        font-size: 2.5rem;
+    }
+
+    .sectionPortfolioSubtitle {
+        margin-bottom: 2rem;
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+    .sectionPortfolioPetTitle {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .sectionPortfolioCard {
+        gap: 1rem;
+        padding: 1rem;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .sectionPortfolioCompetenciesContainer {
+        padding: 1.5rem 0;
+        margin: 0 2rem;
+    }
+
+    .sectionPortfolioCompetenciesCardContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .sectionPortfolioCompetenciesWrap {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding: 0 1rem;
+    }
+
+    .sectionPortfolioCompetenciesTitle {
+        border-left: 4px solid rgb(99, 102, 241);
+        padding-left: 16px;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 32px;
+        margin-left: 0;
+        text-align: start;
+    }
+}

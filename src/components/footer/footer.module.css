@@ -1,0 +1,55 @@
+.footerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border-top: 1px solid rgb(229, 231, 235, 0.1);
+    backdrop-filter: blur(12px);
+    background-color: rgba(11, 15, 25, 0.7);
+    transition: border-color 0.3s ease,
+    box-shadow 0.3s ease;
+    flex: 1;
+}
+
+.footerContainer:hover {
+    border-color: rgba(6, 182, 212, 0.3);
+    box-shadow: 0 10px 30px 10px rgba(6, 182, 212, 0.15);
+}
+
+.footerTextContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.footerTextTitle {
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: -0.4px;
+}
+
+.footerTextSubtitle {
+    color: rgb(107, 114, 128);
+    font-size: 12px;
+    line-height: 16px;
+
+}
+
+.footerLinkHeader {
+    width: 38px;
+    height: 38px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+}
+
+.footerLinkHeader:hover {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.1);
+}

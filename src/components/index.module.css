@@ -1,0 +1,33 @@
+:root {
+  --dark-bg: #030712;
+  --accent-cyan: #06b6d4;
+  --text-gray: #d1d5db;
+  --grid-color: rgba(255, 255, 255, 0.015);
+}
+
+.body {
+  background-color: var(--dark-bg);
+  color: var(--text-gray);
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+.gridBg {
+  background-size: 40px 40px;
+  
+  background-image: 
+    linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
+}
+
+::-moz-selection {
+  background-color: var(--accent-cyan);
+  color: var(--dark-bg);
+}
+
+::selection {
+  background-color: var(--accent-cyan);
+  color: var(--dark-bg);
+}

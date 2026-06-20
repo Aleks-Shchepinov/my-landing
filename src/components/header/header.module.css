@@ -1,0 +1,251 @@
+.headerContainer {
+    box-sizing: border-box;
+    padding: 16px 24px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.033);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(156, 163, 175, 0.15);
+    transition: border 0.3s ease;
+    position: sticky;
+    width: 100%;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.headerContainer:hover {
+    border: 1px solid rgba(6, 182, 212, 0.3);
+    box-shadow: 0 10px 30px -10px rgba(6, 182, 212, 0.15);
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    transition: filter 0.3s ease;
+}
+
+.headerLogoContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.headerLogoContainer:hover .name {
+    color: rgb(34 211 238);
+}
+
+.headerLogoContainer:hover .logo {
+    filter: drop-shadow(0 0 8px rgb(34 211 238));
+}
+
+.nameContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-weight: 800;
+    color: #fff;
+    font-size: 18px;
+    line-height: 18px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.prof {
+    font-size: 11px;
+    margin-top: 4px;
+    letter-spacing: 0.55px;
+    line-height: 16.5px;
+}
+
+.headerCentralPart {
+    display: flex;
+    gap: 32px;
+}
+
+.itemCentralPart {
+    color: rgb(156, 163, 175);
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    position: relative;
+}
+
+.itemCentralPart:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.itemCentralPart::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #06b6d4, #6366f1); 
+    transition: width 0.3s ease;
+}
+
+.itemCentralPart:hover::after {
+    width: 100%;
+}
+
+.contacts {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contactsContainer {
+    padding: 12px 10px;
+    background: linear-gradient(90deg, #06b6d4, #6366f1);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.contactsContainer:hover {
+    box-shadow: 0px 1px 10px #06b6d4;
+}
+
+.burgerButton {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 100;
+}
+
+.burgerLine {
+    display: block;
+    width: 100%;
+    height: 2.5px;
+    background: #fff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.burgerButton.active burgerLine:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.burgerButton.active .burgerLine:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+.burgerButton.active .burgerLine:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+@media (max-width: 1024px) {
+    .burgerButton {
+        display: flex;
+    }
+
+    .headerCentralPart {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        max-width: 320px;
+        height: 100vh;
+        background: rgba(11, 15, 25, 0.95);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        padding: 40px 20px;
+        transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        border-left: 1px solid rgba(255, 255, 255, 0.05);
+        box-shadow: -10px 0 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .headerCentralPart.mobileOpen {
+        right: 0;
+    }
+
+    .itemCentralPart {
+        font-size: 18px;
+        padding: 8px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .itemCentralPart::after {
+        bottom: 0;
+    }
+
+    .contactsContainer {
+        margin-top: 16px;
+        width: 80%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .headerContainer {
+        padding: 12px 16px;
+    }
+
+    .name {
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    .prof {
+        font-size: 10px;
+        margin-top: 2px;
+    }
+
+    .logo {
+        width: 32px;
+        height: 32px;
+    }
+
+    .headerCentralPart {
+        width: 65%;
+        gap: 18px;
+    }
+
+    .itemCentralPart {
+        font-size: 16px;
+    }
+}
+
+.headerCentralPart::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+.headerCentralPart.mobileOpen::before {
+    opacity: 1;
+    pointer-events: auto;
+}
