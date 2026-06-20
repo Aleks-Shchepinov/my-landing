@@ -53,3 +53,9 @@
     border: 1px solid rgba(255, 255, 255, 0.25);
     background-color: rgba(255, 255, 255, 0.1);
 }
+
+@media (max-width: 480px) {
+    .footerLinkHeader {
+        margin-right: auto;
+    }
+}

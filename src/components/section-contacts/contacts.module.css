@@ -69,8 +69,8 @@
 
 .sectionContactsInfoCardIcon {
     display: flex;
-    width: 44px;
-    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
